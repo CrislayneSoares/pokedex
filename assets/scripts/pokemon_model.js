@@ -8,6 +8,8 @@ class Pokemon {
 
     height;
     weight;
-    abilities;
-    species;
+    abilities = [];
+
+    bases = [];
+    total;
 }

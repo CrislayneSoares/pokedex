@@ -1,25 +1,87 @@
 
 header nav {
     color: black;
-    padding: 1rem;
+    padding: 2rem 1rem 0 1rem;
 }
 
 header nav a {
     padding: 1rem;
     text-decoration: none;
+    color: #000000;
+}
+
+a img{
+    width: 1.3rem;
 }
 
 .contentCard {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #77c857;
     color: white;
 }
 
-.pokemonDetails {
+.pokemonLi {
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+.grass {
+    background-color: #77c857;
+}
+.fire {
+    background-color: #ee7f38;
+}
+.water {
+    background-color: #678fee;
+}
+.electric {
+    background-color: #f7cf2c;
+}
+.ice {
+    background-color: #98d5d7;
+}
+.ground {
+    background-color: #dfbf69;
+}
+.flying {
+    background-color: #a98ffa;
+}
+.poison {
+    background-color: #a040a0;
+}
+.fighting {
+    background-color: #bf3820;
+}
+.psychic {
+    background-color: #f65687;
+}
+.dark {
+    background-color: #725b47;
+}
+.rock {
+    background-color: #b8a137;
+}
+.bug {
+    background-color: #a8b720;
+}
+.ghost {
+    background-color: #6c5b96;
+}
+.steel {
+    background-color: #b9b7cf;
+}
+.dragon {
+    background-color: #6f38f6;
+}
+.fairy {
+    background-color: #f9acc7;
 }
 
 .name {
@@ -44,8 +106,8 @@ header nav a {
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
-    background-color: #77c857;
 }
+
 .listDetails {
     display: flex;
     flex-direction: column;
@@ -60,28 +122,76 @@ header nav a {
 }
 
 .details {
-    width: 100%;
+    width: 90%;
     background-color: white;
     color: black;
     border-radius: 1rem;
     padding: 2.5rem 1rem 2rem 1rem;
 }
 
-table th {
-    padding: 1rem;
-    font-size: 1.1rem;
+.divider {
+    padding: 10px 0;
 }
 
-table td {
-    text-transform: capitalize;
-    padding: .5rem 0;
-    padding-right: 2rem;
-    color: rgb(143, 138, 138);
+.details ol {
+    list-style: none;
+    
+}
+
+.details li {
+    margin-top: 20px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.details label {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #a98ffa;
+}
+
+input {
+    visibility: hidden;
+}
+
+input:checked + .about-wrapper li{
+    display: none;
+}
+
+input:checked + .base-wrapper li{
+    display: none;
+}
+
+.details li h3, p {
+    font-size: 1rem;
+    color: #a5a6a8;
+}
+
+progress {
+    width: 130px;
+    height: 10px;
+    margin-left: 8px;
 }
 
 .bold {
     color: black;
     font-weight: bold;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    margin: 0 .5rem .5rem 0;
+    background-color: #a98ffa;
 }
 
 @media screen and (min-width: 992px) {
@@ -95,6 +205,9 @@ table td {
     .listDetails img {
         width: 50%;
         margin-bottom: -3rem;
+    }
+    .listDetails {
+        width: 100%;
     }
 }
 
